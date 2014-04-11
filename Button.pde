@@ -52,7 +52,7 @@ class Button {
   void displayName() {
     fill(75);
     textAlign(CENTER);
-    textSize(20);
+    textSize(16);
     text(name, x, y + 7);
   }
 

@@ -2,16 +2,27 @@ class Panel {
   String title;
   String content;
   color text = color(75);
+  int x = 15;
+  int y = height/5;
+  int stalls;
   Buttons buttonGroup;
+  BackButton back;
 
-  Panel(String title_, Buttons buttonGroup_) {
+  Panel(String title_, Buttons buttonGroup_, boolean backNeeded, int backPanel_) {
     this.title = title_;
     this.buttonGroup = buttonGroup_;
+    if (backNeeded == true && backPanel_ != -1) {
+      back = new BackButton(backPanel_);
+    }
   }
 
-  Panel(String title_, String content_) {
+  Panel(String title_, String content_, boolean backNeeded, int backPanel_) {
     this.title = title_;
     this.content = content_;
+    
+    if (backNeeded == true && backPanel_ != -1) {
+      back = new BackButton(backPanel_);
+    }
   }
 
   void display() {
@@ -29,9 +40,16 @@ class Panel {
     // draw the content
     if (content != null) {
       fill(text);
-      textSize(12);
       textAlign(LEFT);
-      text(content, 15, height/2);
+      textSize(18);
+      text("Location:", x, y - 23); 
+      textSize(12);
+      text(content, x, y);
+    }
+    
+    // draw the back button
+    if (back != null) {
+      back.display();
     }
   }
 }

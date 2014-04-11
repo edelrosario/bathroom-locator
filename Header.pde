@@ -1,5 +1,6 @@
 class Header {
-  color bg = color(126, 204, 255);        // background color
+  //color bg = color(126, 204, 255);        // background color
+  color bg = color(243, 240, 225);
   color stTop = color(135);               // stroke color - top line
   color fRect = color(123, 193, 232);     // fill color - Header Box
   color stBot = color(166, 212, 255);     // stroke color - bottom line
