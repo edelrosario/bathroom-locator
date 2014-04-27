@@ -40,10 +40,7 @@ class PanelManager {
     reitz = new Panel("Reitz Floors", reitzButtons, true, 0);
 
     // MARSTON1
-    /*String content1 = "Walk towards the bookshelves behind study tables, and take a left." + '\n' +
-      "You will walk all the way down the pathway between two rows of bookshelves, " + '\n' +
-      "and the bathrooms will be located on your right."; */
-    String content1 = "Floor under constructionl; unaccessable to the public.";
+    String content1 = "Floor under construction; unaccessable to the public.";
     marston1 = new Panel("Floor 1 - Marston", content1, true, 1);
 
     // MARSTON2
@@ -74,10 +71,7 @@ class PanelManager {
     marston5 = new Panel("Floor 5 - Marston", content5, true, 1);
     
     // REITZ BASEMENT
-    String content6 = "Walk into the hallway between the elevators and outside exit and take a left.  Walk" + '\n' +
-      "a little down that hallway and you should come across a small study area with" + '\n' +
-      "offices and a bathroom.  The women's will be on the right and the men's on the" + '\n' + 
-      "left.";
+    String content6 = "Floor under construction; unaccessable to the public.";
     reitzB = new Panel("Basement - Reitz", content6, true, 7);
     
     // REITZ PLAZA
@@ -108,9 +102,7 @@ class PanelManager {
     reitz2 = new Panel("Floor 2 - Reitz", content10, true, 7);
     
     // REITZ3
-    String content11 = "From the elevators, for the room directory and take a right for the men's restroom" + '\n' +
-      "and a left for the women's restroom.  The restrooms will be found directly after" + '\n' +
-      "the water fountains.";
+    String content11 = "Floor under construction; unaccessable to the public.";
     reitz3 = new Panel("Floor 3 - Reitz", content11, true, 7);
 
 
@@ -191,4 +183,3 @@ class PanelManager {
     }
   }
 }
-
