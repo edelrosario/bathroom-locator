@@ -1,6 +1,6 @@
 # Bathroom Locator
 
-Project for CAP 3032
+Project for CAP 3032 ||
 Author : Elaine Del Rosario
 
 ## Changes Since Iteration 3
