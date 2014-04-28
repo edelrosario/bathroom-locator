@@ -9,6 +9,7 @@ class Button {
   String name;          // building name
   String link;          // link code - button identification
   boolean hovering;
+  PFont font;
 
   //constructor
   Button(float x_, float y_, String name_, String link_) {
@@ -20,6 +21,7 @@ class Button {
     name = name_;
     link = link_;
     hovering = false;
+    font = loadFont("Chalkboard-Bold-18.vlw");
   }
 
   // detects mouse distance from button
@@ -51,8 +53,9 @@ class Button {
   // creates the text that goes inside the button
   void displayName() {
     fill(75);
+    textFont(font);
     textAlign(CENTER);
-    textSize(16);
+    textSize(20);
     text(name, x, y + 7);
   }
 

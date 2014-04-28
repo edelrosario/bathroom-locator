@@ -20,3 +20,4 @@ void draw () {
 void mousePressed() {
   manager.checkPanel();
 }
+

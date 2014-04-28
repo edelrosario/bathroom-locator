@@ -7,9 +7,11 @@ class BackButton {
   float cornerRadius = 7;
   int backPanel;
   boolean hovering;
+  //Flush sdfx;
 
   BackButton(int backPanel_) {
     backPanel = backPanel_;
+    //sdfx = new Flush();
   }
 
   void display() {
@@ -17,9 +19,9 @@ class BackButton {
     detect();
 
     // draw rect
-    fill(255);
+    fill(159, 210, 205);
     if (hovering) {
-      fill(200);
+      fill(112, 191, 183);
     }
     stroke(0);
     rect(x, y, w, h, cornerRadius);
@@ -27,7 +29,7 @@ class BackButton {
     // draw button text
     textAlign(CENTER);
     textSize(20);
-    fill(0);
+    fill(46, 52, 72);
     noStroke();
     text(buttonText, x+50, y+23);
   }
@@ -45,7 +47,7 @@ class BackButton {
     detect();
     if (hovering) {
       manager.currentPanel = backPanel;
+      // sdfx.flushing();
     }
   }
 }
-
